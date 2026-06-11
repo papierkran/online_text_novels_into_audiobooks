@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+a {
+text-decoration: none; /* 去除文本下划线 */
+color: inherit; /* 让链接的颜色继承父元素的颜色 */
+cursor: pointer; /* 更改鼠标样式，确保它看起来可以点击 */
+}
+.leftbox {
+width: 300px;
+height: 100vh; /* 高度为视口高度 */
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+background-color: #fff;
+position: relative; /* 使子元素的绝对定位相对于此元素 */
+padding: 10px;
+display: flex;
+flex-direction: column;
+padding: 10px;
+box-sizing: border-box;
+}
+
+.home_page,
+.novel,
+.bookshelf,
+.history {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  transition: background-color 0.3s;
+}
+
+.novel {
+  cursor: pointer;
+}
+
+.novel:hover,
+.home_page:hover,
+.bookshelf:hover,
+.history:hover {
+  background-color: #eaeaea;
+}
+
+p {
+  font-size: 18px;
+color: #333;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: 15px;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.dropdown {
+  width: 100%;
+}
+
+.dropdown_item {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s;
+}
+
+.dropdown_item:hover {
+  background-color: #e5e5e5;
+}
+
+svg {
+  fill: #6c757d;
+  margin-right: 10px;
+  transition: fill 0.3s;
+}
+
+.home_page:hover svg,
+.novel:hover svg,
+.bookshelf:hover svg,
+.history:hover svg {
+  fill: #007bff;
+}
+
+.user_info {
+position: absolute; /* 绝对定位 */
+bottom: 10px; /* 距离底部10px */
+left: 10px; /* 距离左侧10px */
+display: flex;
+align-items: center; /* 垂直居中头像和用户名 */
+}
+
+.user1 {
+width: 50px;
+height: 50px;
+border-radius: 50%; /* 圆形头像 */
+background-color: #6c757d;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white; /* 字体颜色白色 */
+font-size: 20px; /* 字体大小 */
+}
+
+.username {
+margin-left: 10px; /* 左边距 */
+}
+
+.username p {
+font-size: 18px;
+color: #333;
+}

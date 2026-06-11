@@ -1,0 +1,17 @@
+:root {
+  display: flex; /* 使用 flexbox 布局 */
+  height: 100vh; /* 设置高度为视口高度 */
+}
+
+.sidebar {
+  width: 250px; /* 设置 Sidebar 的宽度 */
+}
+
+#app {
+  display: flex; /* 使用 flexbox 布局 */
+  height: 100vh; /* 设置高度为视口高度 */
+}
+
+.sidebar {
+  width: 250px; /* 设置 Sidebar 的宽度 */
+}

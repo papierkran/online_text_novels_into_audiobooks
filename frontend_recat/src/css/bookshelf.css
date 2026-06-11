@@ -1,0 +1,128 @@
+.bookshelf-page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f6f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin-bottom: 40px;
+  }
+  
+  .novel-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 一排四本书 */
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  .novel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 250px; /* 设置最小高度，确保空白也占位置 */
+  }
+  
+  .novel-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .novel-cover {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .novel-info {
+    text-align: center;
+  }
+  
+  .novel-info h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #34495e;
+  }
+  
+  .novel-info a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .novel-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 分页按钮样式 */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .pagination span {
+    line-height: 36px;
+  }
+  
+  .action-buttons {
+    right: 80px; /* 调整位置 */
+    top: 10px; /* 调整位置 */
+    gap: 10px;
+  }
+  
+  .action-buttons button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .action-buttons button:hover {
+    background-color: #2980b9;
+  }
+  
+  .bookshelf_main{
+    width: 80%;
+  }
+  
